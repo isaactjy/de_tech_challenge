@@ -14,7 +14,7 @@ df = pd.DataFrame.from_dict(response.json(), orient = 'columns')
 df['NewCases'] = df['Cases'].shift(1)
 df['NewCases'] = df['NewCases'].fillna(0)
 df['NewCases'] = df['Cases'] - df['NewCases']
-df.to_csv('covid19_sg.csv')
+df.to_csv('section4/covid19_sg.csv')
 
 app = Dash(__name__)
 
