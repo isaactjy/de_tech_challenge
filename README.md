@@ -1,4 +1,5 @@
 # Data Engineer Tech Challenge
+By Isaac Teo Jun Yuan
 
 ## Section 1: Data Pipelines
 Exploration and outline of solution in data_pipeline.ipynb.  
