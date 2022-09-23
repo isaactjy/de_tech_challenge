@@ -11,8 +11,8 @@ Dockerfile will copy and run the file 'dealership.sql' during the initialization
 ## Section 3: System Design
 Diagram created with the help of https://app.diagrams.net/.
 
-## Section 4: Charts and API
+## Section 4: Charts and APIs
 Dashboard created using Plotly Dash, use Requests library in python to pull data from Covid19 API.
 
-## Section 5
+## Section 5: Machine Learning
 Models used: Single Decision Tree and a Random Forest Classifier.
