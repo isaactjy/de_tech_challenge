@@ -4,8 +4,7 @@ def getSales():
     df = pd.concat([pd.read_csv('dataset1.csv', dtype=str),pd.read_csv('dataset2.csv', dtype=str)])
 
     # Split the name field into first_name, and last_name
-    df['first_name'] = df['name'].str.split(' ').str[-2]
-    df['last_name'] = df['name'].str.split(' ').str[-1]
+    df[['first_name','last_name']] = df['name'].str.extract(r'([A-Z][a-z]+)+ ([A-Z][a-z]+)+')
 
     # Remove any zeros prepended to the price field
     df.loc[df['price'].str.contains(r'^0'),'price'] = df[df['price'].str.contains(r'^0')]['price'].str[1:]
